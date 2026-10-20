@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Fofana Anliou</title>
+
+    <!-- Police Roboto (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Lien vers la feuille de style -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===== EN-TÊTE / NAVBAR ===== -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#accueil" class="logo">F<span class="accent">A</span>.</a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="#apropos" class="nav-link">À propos</a></li>
+                <li class="nav-item"><a href="#competences" class="nav-link">Compétences</a></li>
+                <li class="nav-item"><a href="#projets" class="nav-link">Projets</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== HERO ===== -->
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <p class="hero-greeting">Bonjour, je suis</p>
+                <h1 class="hero-title">Fofana <span class="accent">Anliou</span></h1>
+                <h2 class="hero-subtitle">Data Analyst &amp; Développeur BI</h2>
+                <p class="hero-text">
+                    Je transforme les données en décisions. Passionné par la Business Intelligence,
+                    le Machine Learning et l'IA, je conçois des tableaux de bord et des outils
+                    qui rendent l'information claire et utile.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-outline">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar">FA</div>
+            </div>
+        </section>
+
+        <!-- ===== À PROPOS ===== -->
+        <section id="apropos" class="section about">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-grid">
+                <p class="about-text">
+                    Basé à Abidjan, je travaille dans l'analyse de données et le reporting décisionnel :
+                    suivi d'indicateurs (KPI), intégration de données multi-sources et création de
+                    rapports Power BI. Aujourd'hui, j'élargis mes compétences vers le développement web
+                    et l'ingénierie de l'intelligence artificielle.
+                </p>
+                <ul class="stats">
+                    <li class="stat-card"><span class="stat-number">20+</span><span class="stat-label">Tableaux de bord</span></li>
+                    <li class="stat-card"><span class="stat-number">6</span><span class="stat-label">Technologies maîtrisées</span></li>
+                    <li class="stat-card"><span class="stat-number">10+</span><span class="stat-label">Projets réalisés</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== COMPÉTENCES ===== -->
+        <section id="competences" class="section skills">
+            <h2 class="section-title">Compétences</h2>
+            <ul class="skills-list">
+                <li class="skill-tag">HTML</li>
+                <li class="skill-tag">CSS</li>
+                <li class="skill-tag">Python</li>
+                <li class="skill-tag">SQL</li>
+                <li class="skill-tag">Power BI</li>
+                <li class="skill-tag">DAX</li>
+                <li class="skill-tag">Excel</li>
+                <li class="skill-tag">Azure</li>
+                <li class="skill-tag">Machine Learning</li>
+            </ul>
+        </section>
+
+        <!-- ===== PROJETS ===== -->
+        <section id="projets" class="section projects">
+            <h2 class="section-title">Mes projets</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-icon">📊</div>
+                    <h3 class="project-title">Tableau de bord KPI</h3>
+                    <p class="project-text">Suivi en temps réel d'indicateurs de performance avec Power BI et DAX.</p>
+                    <span class="project-tech">Power BI · DAX · SQL</span>
+                </article>
+                <article class="project-card">
+                    <div class="project-icon">🤖</div>
+                    <h3 class="project-title">Prévision par Machine Learning</h3>
+                    <p class="project-text">Modèle prédictif en Python pour anticiper des tendances à partir de données historiques.</p>
+                    <span class="project-tech">Python · scikit-learn</span>
+                </article>
+                <article class="project-card">
+                    <div class="project-icon">🧾</div>
+                    <h3 class="project-title">Application de facturation</h3>
+                    <p class="project-text">Application web multi-utilisateurs de gestion de factures.</p>
+                    <span class="project-tech">Flask · SQLite</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" class="section contact">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-text">Un projet, une question ? N'hésitez pas à m'écrire.</p>
+            <form class="contact-form">
+                <input type="text" class="form-input" placeholder="Votre nom" required>
+                <input type="email" class="form-input" placeholder="Votre e-mail" required>
+                <textarea class="form-input form-textarea" placeholder="Votre message" required></textarea>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ===== PIED DE PAGE ===== -->
+    <footer class="footer">
+        <p class="footer-text">&copy; 2026 Fofana Anliou — Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
